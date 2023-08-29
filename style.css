@@ -3,6 +3,11 @@
   background-color: bisque;
 }
 
+.container-custom{
+  width: 60%;
+  margin: 0 auto;
+}
+
 
 /* header */
 header .header_top{
@@ -11,7 +16,19 @@ header .header_top{
 }
 
 header .header_jumbotron{
-  height: 500px;
+  /* height: 500px; */
   background-color: #1abc9c;
 }
 /* /header */
+
+
+/* main */
+main section.portfolio{
+  /* height: 500px; */
+}
+
+main section.portfolio .row .col{
+  /* height: 200px; */
+}
+
+/* /main */
