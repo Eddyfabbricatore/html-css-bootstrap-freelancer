@@ -11,24 +11,21 @@
 
 /* header */
 header .header_top{
-  height: 90px;
   background-color: #2c3e50;
 }
 
 header .header_jumbotron{
-  /* height: 500px; */
   background-color: #1abc9c;
 }
 /* /header */
 
 
-/* main */
-main section.portfolio{
-  /* height: 500px; */
+/* footer */
+footer section.top{
+  background-color: #3a546d;
 }
 
-main section.portfolio .row .col{
-  /* height: 200px; */
+footer section.copyright{
+  background-color: #2c3e50;
 }
-
-/* /main */
+/* /footer */
