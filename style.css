@@ -106,6 +106,28 @@ main .about{
   color: white;
   background-color: #1abc9c;
 }
+
+main .contact-me form .input-custom {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+main .contact-me form .input-custom::placeholder {
+  color: black;
+}
+
+main .contact-me form .btn-custom{
+  border: none;
+  border: 1px solid #1abc9c;
+  background-color: #1abc9c;
+}
+
+main .contact-me form .btn-custom:hover{
+  background-color: rgba(26, 188, 156, 0.8);
+}
 /* /main */
 
 
