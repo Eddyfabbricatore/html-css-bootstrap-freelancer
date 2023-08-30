@@ -1,3 +1,9 @@
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .debug{
   border: 1px solid black;
   background-color: bisque;
@@ -6,6 +12,30 @@
 .container-custom{
   width: 60%;
   margin: 0 auto;
+}
+
+.background-pink{
+  background-color: #ba4b63;
+}
+
+.background-lightblue{
+  background-color: #1ea4b6;
+}
+
+.background-black{
+  background-color: #140f0f;
+}
+
+.background-blue{
+  background-color: #1c83c1;
+}
+
+.background-darkblue{
+  background-color: #0e38b5;
+}
+
+.background-rose{
+  background-color: #ccb2a3;
 }
 
 
@@ -34,11 +64,6 @@ main .jumbotron-custom{
 main .jumbotron-custom .avatar{
   width: 230px;
   height: 230px;
-}
-
-main .jumbotron-custom .avatar img{
-  width: 100%;
-  height: 100%;
 }
 
 .star .line{
@@ -71,35 +96,28 @@ main .contact-me .star .line{
 }
 
 main .portfolio .row .col .card-custom{
+  position: relative;
   height: 250px;
   border-radius: 10px;
-  background-color: #ba4b63;
+  cursor: pointer;
 }
 
-main .portfolio .row .col .card-custom img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+main .portfolio .row .col .card-custom:hover{
+  opacity: 0.8;
 }
 
-main .portfolio .row .col .card-custom.background-lightblue{
-  background-color: #1ea4b6;
+main .portfolio .row .col .card-custom i{
+  display: none;
 }
 
-main .portfolio .row .col .card-custom.background-black{
-  background-color: #140f0f;
-}
-
-main .portfolio .row .col .card-custom.background-blue{
-  background-color: #1c83c1;
-}
-
-main .portfolio .row .col .card-custom.background-darkblue{
-  background-color: #0e38b5;
-}
-
-main .portfolio .row .col .card-custom.background-rose{
-  background-color: #ccb2a3;
+main .portfolio .row .col .card-custom:hover i{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: white;
 }
 
 main .about{
@@ -107,7 +125,7 @@ main .about{
   background-color: #1abc9c;
 }
 
-main .contact-me form .input-custom {
+main .contact-me form .input-custom{
   border-top: none;
   border-left: none;
   border-right: none;
@@ -115,7 +133,7 @@ main .contact-me form .input-custom {
   padding-left: 0;
 }
 
-main .contact-me form .input-custom::placeholder {
+main .contact-me form .input-custom::placeholder{
   color: black;
 }
 
@@ -132,8 +150,35 @@ main .contact-me form .btn-custom:hover{
 
 
 /* footer */
-footer section.top{
+footer {
+  color: white;
+}
+
+footer .top{
   background-color: #3a546d;
+}
+
+footer .top .row .col h3{
+  font-size: 1.5rem;
+}
+
+footer .top .row .col p{
+  font-size: .9rem;
+}
+
+footer .top .row .col .social{
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+footer .top .row .col p a{
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+footer .top .row .col p a:hover{
+  text-decoration: underline;
 }
 
 footer section.copyright{
